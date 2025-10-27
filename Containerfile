@@ -14,6 +14,7 @@ RUN pacman -Syu \
         noto-fonts-cjk \
         glibc-locales \
         openssh \
+        podman \
         --noconfirm && \
     pacman -S --clean --clean && \
     rm -rf /var/cache/pacman/pkg/*
@@ -40,7 +41,6 @@ RUN paru -S \
         git-get \
         git-graph \
         tea \
-        viddy \
         bitwarden-cli \
         ttf-go \
         atuin \
