@@ -15,6 +15,8 @@ RUN pacman -Syu \
         glibc-locales \
         openssh \
         podman \
+        systemd \
+        fuse-overlayfs \
         --noconfirm && \
     pacman -S --clean --clean && \
     rm -rf /var/cache/pacman/pkg/*
