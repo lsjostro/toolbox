@@ -34,7 +34,6 @@ RUN paru -S \
         fish \
         jujutsu \
         git \
-        go \
         procs \
         dust \
         jless \
@@ -59,6 +58,7 @@ RUN paru -S \
         ripgrep \
         broot \
         tmux \
+        zellij \
         neovim \
         kail \
         k9s \
