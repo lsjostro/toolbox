@@ -41,6 +41,7 @@ RUN paru -S \
         difftastic \
         git-get \
         git-graph \
+        git-credential-oauth \
         tea \
         bitwarden-cli \
         ttf-go \
