@@ -16,6 +16,7 @@ RUN pacman -Syu \
         openssh \
         podman \
         systemd \
+        shellcheck \
         fuse-overlayfs \
         --noconfirm && \
     pacman -S --clean --clean && \
