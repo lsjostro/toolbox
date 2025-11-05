@@ -72,7 +72,11 @@ RUN paru -S \
         kubectl-view-secret-bin \
         kubectx \
         kubelogin \
+        kubeseal \
+        argocd \
+        istio \
         helm \
+        helmfile \
         kustomize \
         helix \
         bash-language-server \
@@ -83,6 +87,7 @@ RUN paru -S \
         yaml-language-server \
         typescript-language-server \
         vscode-json-languageserver \
+        yq \
         --noconfirm
 USER root
 WORKDIR /
