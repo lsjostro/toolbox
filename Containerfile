@@ -81,6 +81,8 @@ RUN paru -S \
         helix \
         bash-language-server \
         gopls \
+        nickel \
+        nickel-language-server \
         lua-language-server \
         python-lsp-server \
         rust-analyzer \
