@@ -30,7 +30,7 @@ RUN useradd -m --shell=/bin/bash build && usermod -L build && \
 # Install AUR packages
 USER build
 WORKDIR /home/build
-RUN paru -S \
+RUN paru -Syu \
         ghostty \
         fish \
         jujutsu \
