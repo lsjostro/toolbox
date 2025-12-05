@@ -73,6 +73,7 @@ RUN paru -Syu \
         kubectx \
         kubelogin \
         kubeseal \
+        dyff-bin \
         argocd \
         istio \
         helm \
