@@ -36,7 +36,6 @@ RUN paru -Syu \
         jujutsu \
         git \
         procs \
-        dust \
         jless \
         git-delta \
         difftastic \
