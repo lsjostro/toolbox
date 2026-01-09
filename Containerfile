@@ -74,6 +74,7 @@ RUN paru -Syu \
         kubeseal \
         dyff-bin \
         argocd \
+        fluxcd \
         istio \
         helm \
         helmfile \
