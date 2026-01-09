@@ -69,7 +69,7 @@ RUN paru -Syu \
         kubectl-cnpg \
         kubectl-neat \
         kubectl-view-secret-bin \
-        kubectx \
+        # kubectx \
         kubelogin \
         kubeseal \
         dyff-bin \
