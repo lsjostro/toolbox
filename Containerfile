@@ -80,6 +80,7 @@ RUN paru -Syu \
         helmfile \
         kustomize \
         talosctl \
+        crane \
         helix \
         bash-language-server \
         gopls \
