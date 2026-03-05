@@ -10,6 +10,7 @@ RUN pacman -Syu \
         pipewire-alsa \
         pipewire-jack \
         wireplumber \
+        nix \
         xdg-user-dirs \
         noto-fonts-cjk \
         glibc-locales \
