@@ -55,6 +55,7 @@ RUN paru -Syu \
         bat \
         eza \
         bottom \
+        pass \
         github-cli \
         fd \
         ripgrep \
