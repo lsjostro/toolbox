@@ -90,6 +90,8 @@ RUN paru -Syu \
         nickel-language-server \
         lua-language-server \
         python-lsp-server \
+        taplo-cli \
+        typos-lsp \
         rust-analyzer \
         yaml-language-server \
         typescript-language-server \
