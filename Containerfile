@@ -19,6 +19,9 @@ RUN pacman -Syu \
         systemd \
         shellcheck \
         fuse-overlayfs \
+        https://archive.archlinux.org/packages/g/ghostty/ghostty-1.3.0-1-x86_64.pkg.tar.zst \
+        https://archive.archlinux.org/packages/g/ghostty-shell-integration/ghostty-shell-integration-1.3.0-1-x86_64.pkg.tar.zst \
+        https://archive.archlinux.org/packages/g/ghostty-terminfo/ghostty-terminfo-1.3.0-1-x86_64.pkg.tar.zst \
         --noconfirm && \
     pacman -S --clean --clean && \
     rm -rf /var/cache/pacman/pkg/*
@@ -32,7 +35,6 @@ RUN useradd -m --shell=/bin/bash build && usermod -L build && \
 USER build
 WORKDIR /home/build
 RUN paru -Syu \
-        ghostty \
         fish \
         jujutsu \
         git \
