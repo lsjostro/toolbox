@@ -60,6 +60,9 @@ RUN paru -Syu \
         fd \
         ripgrep \
         broot \
+        bats \
+        bats-assert \
+        bats-support \
         tmux \
         zellij \
         neovim \
