@@ -20,6 +20,13 @@ RUN pacman -Syu \
         shellcheck \
         fuse-overlayfs \
         --noconfirm && \
+    pacman -U \
+      https://archive.archlinux.org/packages/m/mesa/mesa-1%3A25.3.4-1-x86_64.pkg.tar.zst \
+      https://archive.archlinux.org/packages/v/vulkan-intel/vulkan-intel-1%3A25.3.4-1-x86_64.pkg.tar.zst \
+      https://archive.archlinux.org/packages/v/vulkan-radeon/vulkan-radeon-1%3A25.3.4-1-x86_64.pkg.tar.zst \
+      https://archive.archlinux.org/packages/v/vulkan-mesa-layers/vulkan-mesa-layers-1%3A25.3.4-1-x86_64.pkg.tar.zst \
+      https://archive.archlinux.org/packages/v/vulkan-mesa-implicit-layers/vulkan-mesa-implicit-layers-1%3A25.3.4-1-x86_64.pkg.tar.zst
+      --noconfirm && \
     pacman -U https://archive.archlinux.org/packages/g/ghostty/ghostty-1.2.3-3-x86_64.pkg.tar.zst \
         https://archive.archlinux.org/packages/g/ghostty-shell-integration/ghostty-shell-integration-1.2.3-3-x86_64.pkg.tar.zst \
         https://archive.archlinux.org/packages/g/ghostty-terminfo/ghostty-terminfo-1.2.3-3-x86_64.pkg.tar.zst \
