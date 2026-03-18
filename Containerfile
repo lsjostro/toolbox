@@ -19,7 +19,8 @@ RUN pacman -Syu \
         systemd \
         shellcheck \
         fuse-overlayfs \
-        https://archive.archlinux.org/packages/g/ghostty/ghostty-1.3.0-1-x86_64.pkg.tar.zst \
+        --noconfirm && \
+    pacman -U https://archive.archlinux.org/packages/g/ghostty/ghostty-1.3.0-1-x86_64.pkg.tar.zst \
         https://archive.archlinux.org/packages/g/ghostty-shell-integration/ghostty-shell-integration-1.3.0-1-x86_64.pkg.tar.zst \
         https://archive.archlinux.org/packages/g/ghostty-terminfo/ghostty-terminfo-1.3.0-1-x86_64.pkg.tar.zst \
         --noconfirm && \
