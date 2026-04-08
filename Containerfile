@@ -107,7 +107,7 @@ RUN paru -Sy \
 # use Nickel staticly linked binaries as arch nickel pkgs breaks every time nix is updated
 RUN curl -L https://github.com/nickel-lang/nickel/releases/download/1.16.0/nickel-x86_64-linux -o /usr/bin/nickel && \
         curl -L https://github.com/nickel-lang/nickel/releases/download/1.16.0/nls-x86_64-linux -o /usr/bin/nls && \
-        chmod +x /usr/bin/nickel && chnmod +x /usr/bin/nls
+        chmod +x /usr/bin/nickel && chmod +x /usr/bin/nls
 
 USER root
 WORKDIR /
