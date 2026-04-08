@@ -21,6 +21,11 @@ RUN pacman -Syu \
         fuse-overlayfs \
         ghostty \
         --noconfirm && \
+    pacman -U \
+      https://archive.archlinux.org/packages/m/mesa/mesa-1%3A26.0.1-1-x86_64.pkg.tar.zst \
+      https://archive.archlinux.org/packages/l/llvm-libs/llvm-libs-21.1.8-1-x86_64.pkg.tar.zst \
+      https://archive.archlinux.org/packages/l/lib32-llvm-libs/lib32-llvm-libs-1%3A21.1.8-1-x86_64.pkg.tar.zst \
+      --noconfirm && \
     pacman -S --clean --clean && \
     rm -rf /var/cache/pacman/pkg/*
 
