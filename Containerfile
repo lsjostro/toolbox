@@ -92,8 +92,6 @@ RUN paru -Sy \
         helix \
         bash-language-server \
         gopls \
-        nickel \
-        nickel-language-server \
         lua-language-server \
         python-lsp-server \
         taplo-cli \
@@ -103,7 +101,10 @@ RUN paru -Sy \
         typescript-language-server \
         vscode-json-languageserver \
         yq \
-        --noconfirm
+        --noconfirm && \
+        curl -L https://github.com/nickel-lang/nickel/releases/download/1.16.0/nickel-x86_64-linux -o /usr/bin/nickel && \
+        curl -L https://github.com/nickel-lang/nickel/releases/download/1.16.0/nls-x86_64-linux -o /usr/bin/nls && \
+        chmod +x /usr/bin/nickel /usr/bin/nls
 USER root
 WORKDIR /
 
